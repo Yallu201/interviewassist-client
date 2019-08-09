@@ -22,12 +22,12 @@ div.main_wrap {
 
 @media (min-width:0px) and (max-width: 1600px) {
   section.card__outerwrap {
-    column-count: 1;
+    column-count: 1 !important;
   }
 }
 
 @media (min-width: 1601px) {
-  section.card__outerwrap {
+  section.card__outerwrap1 {
     column-count: 2;
   }
 }
@@ -52,6 +52,14 @@ article.center * {
 section.card__outerwrap {
   display: block;
   position: relative;
+}
+
+section.card__outerwrap--single {
+  column-count: 1;
+}
+
+section.card__outerwrap--double {
+  column-count: 2;
 }
 
 section.card__outerwrap:hover .card:not(:hover) {
